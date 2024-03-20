@@ -20,7 +20,7 @@ CREATE TABLE Hostitel (
     vek INT,
     pohlavi VARCHAR(20),
     rodne_cislo VARCHAR(10) UNIQUE CONSTRAINT check_rc CHECK (REGEXP_LIKE(rodne_cislo, '^([0–9]{6}/[0–9]{3,4})$')),
-    cislo_bankovniho_uctu VARCHAR(255) UNIQUE CONSTRAINT check_cb CHECK (REGEXP_LIKE(cislo_bankovniho_uctu, '^()$')),
+    cislo_bankovniho_uctu VARCHAR(255),
     ID_kocky INTEGER,
 
     PRIMARY KEY (ID_hostitele),
