@@ -81,6 +81,21 @@ CREATE TABLE Kocka_Teritorium (
     FOREIGN KEY (ID_teritoria) REFERENCES Teritorium(ID)
 );
 
+
+-- kontrola poctu zaznamu smrti
+CREATE OR REPLACE TRIGGER trg_check_death_limit BEFORE INSERT ON Smrt
+    FOR EACH ROW
+    DECLARE
+        death_count NUMBER;
+    BEGIN
+        SELECT COUNT(*) INTO death_count FROM Smrt WHERE ID_kocky = :NEW.ID_kocky;
+
+        IF death_count >= 9 THEN
+            RAISE_APPLICATION_ERROR(-20001, 'Kočka nemůže mít více než 9 záznamů o smrti.');
+        END IF;
+    END;
+/
+
 INSERT INTO Kocka (jmeno, rasa) VALUES ('Amča', 'Korat');
 INSERT INTO Kocka (jmeno, rasa) VALUES ('Mikeš', 'Domací');
 INSERT INTO Kocka (jmeno, rasa) VALUES ('Micka', 'Egyptská');
@@ -142,3 +157,5 @@ INSERT INTO Kocka_Teritorium (ID_kocky, ID_teritoria) VALUES (5, 5);
 INSERT INTO Kocka_Teritorium (ID_kocky, ID_teritoria) VALUES (6, 5);
 INSERT INTO Kocka_Teritorium (ID_kocky, ID_teritoria) VALUES (7, 5);
 INSERT INTO Kocka_Teritorium (ID_kocky, ID_teritoria) VALUES (8, 5);
+
+
