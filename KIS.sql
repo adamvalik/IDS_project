@@ -47,12 +47,12 @@ CREATE TABLE Teritorium (
     rozloha DECIMAL(10,2),
 
     -- verejne teritorium
-    propaganda VARCHAR(100) NULL,
-    rekreace VARCHAR(50) NULL,
+    propaganda VARCHAR(100) NULL, -- reklamni slogany a propagace kocek v danem teritoriu
+    rekreace VARCHAR(50) NULL, -- popis rekreacnich moznosti v danem teritoriu
 
     -- tajne teritorium
-    heslo VARCHAR(50) NULL,
-    uroven_ochrany INT NULL,
+    heslo VARCHAR(50) NULL, -- heslo pro vstup do tajneho teritoria
+    uroven_ochrany INT NULL, -- uroven ochrany tajneho teritoria
 
     PRIMARY KEY (ID)
     -- tento postup jsme zvolili jelikoz specializace teritoria jsou disjunktni a totalni
@@ -92,6 +92,17 @@ CREATE OR REPLACE TRIGGER trg_check_death_limit BEFORE INSERT ON Smrt
 
         IF death_count >= 9 THEN
             RAISE_APPLICATION_ERROR(-20001, 'Kočka nemůže mít více než 9 záznamů o smrti.');
+        END IF;
+    END;
+/
+
+-- kontrola, zda je datum narozeni pred datem smrti
+CREATE OR REPLACE TRIGGER trg_birth_before_death BEFORE INSERT ON Smrt
+    FOR EACH ROW
+    BEGIN
+    -- Check if the date of birth is after the date of death
+        IF :NEW.datum_narozeni > :NEW.datum_smrti THEN
+            RAISE_APPLICATION_ERROR(-20002, 'Datum narození musí být před datem smrtí.');
         END IF;
     END;
 /
