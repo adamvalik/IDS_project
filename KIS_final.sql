@@ -184,8 +184,9 @@ CREATE OR REPLACE TRIGGER trg_check_smrt BEFORE INSERT ON Smrt
     END;
 /
 
-
+-- 9 smrt kocku ukonci
 INSERT INTO Smrt (ID_kocky, datum_narozeni, datum_smrti, zpusob_smrti, ID_teritoria) VALUES (5, TO_DATE('2019-09-15', 'YYYY-MM-DD'), TO_DATE('2020-09-14', 'YYYY-MM-DD'), 'Úraz', 2);
+-- pokus o vlozeni dalsi smrti kocky vede k chybe
 INSERT INTO Smrt (ID_kocky, datum_narozeni, datum_smrti, zpusob_smrti, ID_teritoria) VALUES (5, TO_DATE('2020-09-15', 'YYYY-MM-DD'), TO_DATE('2021-09-14', 'YYYY-MM-DD'), 'Úraz', 2);
 
 
