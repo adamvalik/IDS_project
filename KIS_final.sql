@@ -112,7 +112,7 @@ INSERT INTO Hracka (typ, barva, cena, ID_hostitele) VALUES ('Kulička', 'černá
 INSERT INTO Hracka (typ, barva, cena, ID_hostitele) VALUES ('Pelech', 'bílá', 100.00, 2);
 INSERT INTO Hracka (typ, barva, cena, ID_hostitele) VALUES ('Myš', 'hnědá', 19.90, 3);
 INSERT INTO Hracka (typ, barva, cena, ID_hostitele) VALUES ('Hůlka s pírkem', 'Vícebarevná', 7.50, 4);
-INSERT INTO Hracka (typ, barva, cena, ID_hostitele) VALUES ('Míček', 'Zelená', 5.25, 5);
+INSERT INTO Hracka (typ, barva, cena, ID_hostitele) VALUES ('Míček', 'Zelená', 29.90, 5);
 INSERT INTO Hracka (typ, barva, cena, ID_hostitele) VALUES ('Škrabadlo', 'Bežcová', 19.99, 8);
 INSERT INTO Hracka (typ, barva, cena, ID_hostitele) VALUES ('Tunelová hračka', 'Modrá', 15.75, 9);
 INSERT INTO Hracka (typ, barva, cena, ID_hostitele) VALUES ('Hračka s peřím', 'Červená', 8.99, 9);
@@ -134,15 +134,14 @@ INSERT INTO Smrt (ID_kocky, datum_narozeni, datum_smrti, zpusob_smrti, ID_terito
 INSERT INTO Smrt (ID_kocky, datum_narozeni, datum_smrti, zpusob_smrti, ID_teritoria) VALUES (4, TO_DATE('2019-11-15', 'YYYY-MM-DD'), TO_DATE('2025-01-25', 'YYYY-MM-DD'), 'Neštěstí', 4);
 INSERT INTO Smrt (ID_kocky, datum_narozeni, datum_smrti, zpusob_smrti, ID_teritoria) VALUES (1, TO_DATE('2012-03-10', 'YYYY-MM-DD'), TO_DATE('2021-07-20', 'YYYY-MM-DD'), 'Stáří', 1);
 INSERT INTO Smrt (ID_kocky, datum_narozeni, datum_smrti, zpusob_smrti, ID_teritoria) VALUES (2, TO_DATE('2014-06-25', 'YYYY-MM-DD'), TO_DATE('2022-11-05', 'YYYY-MM-DD'), 'Nemoc', 5);
-INSERT INTO Smrt (ID_kocky, datum_narozeni, datum_smrti, zpusob_smrti, ID_teritoria) VALUES (5, TO_DATE('2011-09-15', 'YYYY-MM-DD'), TO_DATE('2012-09-14', 'YYYY-MM-DD'), 'Úraz', 1);
-INSERT INTO Smrt (ID_kocky, datum_narozeni, datum_smrti, zpusob_smrti, ID_teritoria) VALUES (5, TO_DATE('2012-09-15', 'YYYY-MM-DD'), TO_DATE('2013-09-14', 'YYYY-MM-DD'), 'Nemoc', 2);
-INSERT INTO Smrt (ID_kocky, datum_narozeni, datum_smrti, zpusob_smrti, ID_teritoria) VALUES (5, TO_DATE('2013-09-15', 'YYYY-MM-DD'), TO_DATE('2014-09-14', 'YYYY-MM-DD'), 'Zranění', 3);
-INSERT INTO Smrt (ID_kocky, datum_narozeni, datum_smrti, zpusob_smrti, ID_teritoria) VALUES (5, TO_DATE('2014-09-15', 'YYYY-MM-DD'), TO_DATE('2015-09-14', 'YYYY-MM-DD'), 'Nehoda', 4);
-INSERT INTO Smrt (ID_kocky, datum_narozeni, datum_smrti, zpusob_smrti, ID_teritoria) VALUES (5, TO_DATE('2015-09-15', 'YYYY-MM-DD'), TO_DATE('2016-09-14', 'YYYY-MM-DD'), 'Nemoc', 1);
-INSERT INTO Smrt (ID_kocky, datum_narozeni, datum_smrti, zpusob_smrti, ID_teritoria) VALUES (5, TO_DATE('2016-09-15', 'YYYY-MM-DD'), TO_DATE('2017-09-14', 'YYYY-MM-DD'), 'Neštěstí', 2);
-INSERT INTO Smrt (ID_kocky, datum_narozeni, datum_smrti, zpusob_smrti, ID_teritoria) VALUES (5, TO_DATE('2017-09-15', 'YYYY-MM-DD'), TO_DATE('2018-09-14', 'YYYY-MM-DD'), 'Úraz', 3);
-INSERT INTO Smrt (ID_kocky, datum_narozeni, datum_smrti, zpusob_smrti, ID_teritoria) VALUES (5, TO_DATE('2018-09-15', 'YYYY-MM-DD'), TO_DATE('2019-09-14', 'YYYY-MM-DD'), 'Úraz', 4);
-
+INSERT INTO Smrt (ID_kocky, datum_narozeni, datum_smrti, zpusob_smrti, ID_teritoria) VALUES (5, TO_DATE('2011-09-14', 'YYYY-MM-DD'), TO_DATE('2012-09-14', 'YYYY-MM-DD'), 'Úraz', 1);
+INSERT INTO Smrt (ID_kocky, datum_narozeni, datum_smrti, zpusob_smrti, ID_teritoria) VALUES (5, TO_DATE('2012-09-14', 'YYYY-MM-DD'), TO_DATE('2013-09-14', 'YYYY-MM-DD'), 'Nemoc', 2);
+INSERT INTO Smrt (ID_kocky, datum_narozeni, datum_smrti, zpusob_smrti, ID_teritoria) VALUES (5, TO_DATE('2013-09-14', 'YYYY-MM-DD'), TO_DATE('2014-09-14', 'YYYY-MM-DD'), 'Zranění', 3);
+INSERT INTO Smrt (ID_kocky, datum_narozeni, datum_smrti, zpusob_smrti, ID_teritoria) VALUES (5, TO_DATE('2014-09-14', 'YYYY-MM-DD'), TO_DATE('2015-09-14', 'YYYY-MM-DD'), 'Nehoda', 4);
+INSERT INTO Smrt (ID_kocky, datum_narozeni, datum_smrti, zpusob_smrti, ID_teritoria) VALUES (5, TO_DATE('2015-09-14', 'YYYY-MM-DD'), TO_DATE('2016-09-14', 'YYYY-MM-DD'), 'Nemoc', 1);
+INSERT INTO Smrt (ID_kocky, datum_narozeni, datum_smrti, zpusob_smrti, ID_teritoria) VALUES (5, TO_DATE('2016-09-14', 'YYYY-MM-DD'), TO_DATE('2017-09-14', 'YYYY-MM-DD'), 'Neštěstí', 2);
+INSERT INTO Smrt (ID_kocky, datum_narozeni, datum_smrti, zpusob_smrti, ID_teritoria) VALUES (5, TO_DATE('2017-09-14', 'YYYY-MM-DD'), TO_DATE('2018-09-14', 'YYYY-MM-DD'), 'Úraz', 3);
+INSERT INTO Smrt (ID_kocky, datum_narozeni, datum_smrti, zpusob_smrti, ID_teritoria) VALUES (5, TO_DATE('2018-09-14', 'YYYY-MM-DD'), TO_DATE('2019-09-14', 'YYYY-MM-DD'), 'Úraz', 4);
 
 INSERT INTO Kocka_Teritorium (ID_kocky, ID_teritoria) VALUES (1, 1);
 INSERT INTO Kocka_Teritorium (ID_kocky, ID_teritoria) VALUES (1, 2);
@@ -185,18 +184,125 @@ CREATE OR REPLACE TRIGGER trg_check_smrt BEFORE INSERT ON Smrt
 /
 
 -- 9 smrt kocku ukonci
-INSERT INTO Smrt (ID_kocky, datum_narozeni, datum_smrti, zpusob_smrti, ID_teritoria) VALUES (5, TO_DATE('2019-09-15', 'YYYY-MM-DD'), TO_DATE('2020-09-14', 'YYYY-MM-DD'), 'Úraz', 2);
+INSERT INTO Smrt (ID_kocky, datum_narozeni, datum_smrti, zpusob_smrti, ID_teritoria) VALUES (5, TO_DATE('2019-09-14', 'YYYY-MM-DD'), TO_DATE('2020-09-14', 'YYYY-MM-DD'), 'Úraz', 2);
 -- pokus o vlozeni dalsi smrti kocky vede k chybe
-INSERT INTO Smrt (ID_kocky, datum_narozeni, datum_smrti, zpusob_smrti, ID_teritoria) VALUES (5, TO_DATE('2020-09-15', 'YYYY-MM-DD'), TO_DATE('2021-09-14', 'YYYY-MM-DD'), 'Úraz', 2);
+INSERT INTO Smrt (ID_kocky, datum_narozeni, datum_smrti, zpusob_smrti, ID_teritoria) VALUES (5, TO_DATE('2020-09-14', 'YYYY-MM-DD'), TO_DATE('2021-09-14', 'YYYY-MM-DD'), 'Úraz', 2);
 
 
 
 -- kontrola, zda je datum narozeni pred datem smrti
 CREATE OR REPLACE TRIGGER trg_birth_before_death BEFORE INSERT ON Smrt
     FOR EACH ROW
+    DECLARE
+        last_death_date DATE;
     BEGIN
+        SELECT MAX(datum_smrti) INTO last_death_date FROM Smrt WHERE ID_kocky = :NEW.ID_kocky;
+
+        -- kocka se ihned ozivi po umrti - datum narozeni musi byt stejne jako datum posledni smrti
+        IF last_death_date IS NOT NULL AND last_death_date != :NEW.datum_narozeni THEN
+            RAISE_APPLICATION_ERROR(-20002, 'Nove datum narozeni musi byt ihned po posledni smrti.');
+        END IF;
+
+        -- datum smrti musi byt vetsi nez datum narozeni
         IF :NEW.datum_narozeni > :NEW.datum_smrti THEN
-            RAISE_APPLICATION_ERROR(-20002, 'Datum narození musí být před datem smrtí.');
+            RAISE_APPLICATION_ERROR(-20003, 'Datum smrti musi byt pozdejsi nez datum narozeni v danem zaznamu.');
         END IF;
     END;
 /
+
+INSERT INTO Smrt (ID_kocky, datum_narozeni, datum_smrti, zpusob_smrti, ID_teritoria) VALUES (6, TO_DATE('2021-09-15', 'YYYY-MM-DD'), TO_DATE('2022-09-14', 'YYYY-MM-DD'), 'Úraz', 2);
+-- kocka se ihned ozivila
+INSERT INTO Smrt (ID_kocky, datum_narozeni, datum_smrti, zpusob_smrti, ID_teritoria) VALUES (6, TO_DATE('2022-09-14', 'YYYY-MM-DD'), TO_DATE('2023-09-14', 'YYYY-MM-DD'), 'Úraz', 2);
+
+-- error kocka se ihned neozivila
+INSERT INTO Smrt (ID_kocky, datum_narozeni, datum_smrti, zpusob_smrti, ID_teritoria) VALUES (6, TO_DATE('2023-09-16', 'YYYY-MM-DD'), TO_DATE('2023-10-14', 'YYYY-MM-DD'), 'Úraz', 2);
+-- error kocka se narodila pred posledni smrti
+INSERT INTO Smrt (ID_kocky, datum_narozeni, datum_smrti, zpusob_smrti, ID_teritoria) VALUES (6, TO_DATE('2022-09-14', 'YYYY-MM-DD'), TO_DATE('2023-12-14', 'YYYY-MM-DD'), 'Úraz', 2);
+-- error kocka ma drivejsi datum smrti nez narozeni
+INSERT INTO Smrt (ID_kocky, datum_narozeni, datum_smrti, zpusob_smrti, ID_teritoria) VALUES (6, TO_DATE('2023-09-14', 'YYYY-MM-DD'), TO_DATE('2022-12-14', 'YYYY-MM-DD'), 'Úraz', 2);
+
+
+
+-- procedura, ktera pro daneho hostitele zkontroluje, zda slouzi nejake kocce, pokud ne, prideli mu kocku, ktera ma nejmene hostitelu
+CREATE OR REPLACE PROCEDURE prideleni_kocky (p_ID_hostitele Hostitel.ID_hostitele%TYPE) IS
+        v_ID_kocky Kocka.ID_kocky%TYPE;
+        v_max_ID_hostitele Hostitel.ID_hostitele%TYPE;
+        invalid_ID EXCEPTION;
+    BEGIN
+        SELECT MAX(ID_hostitele) INTO v_max_ID_hostitele FROM Hostitel;
+
+        IF p_ID_hostitele IS NULL OR p_ID_hostitele < 1 OR p_ID_hostitele > v_max_ID_hostitele THEN
+            RAISE invalid_ID;
+        END IF;
+
+        SELECT ID_kocky INTO v_ID_kocky FROM Hostitel WHERE ID_hostitele = p_ID_hostitele;
+        -- pokud je NULL, hostitel aktualne neslouzi zadne kocce, pridel mu kocku s nejmensim poctem hostitelu
+        IF v_ID_kocky IS NULL THEN
+            SELECT ID_kocky INTO v_ID_kocky
+            FROM (
+                SELECT ID_kocky, COUNT(ID_hostitele) AS pocet_hostitelu
+                FROM Hostitel GROUP BY ID_kocky ORDER BY pocet_hostitelu ASC
+            ) WHERE ROWNUM = 1; -- vyber kocku s nejmensim poctem hostitelu
+            UPDATE Hostitel SET ID_kocky = v_ID_kocky WHERE ID_hostitele = p_ID_hostitele;
+        END IF;
+
+        EXCEPTION
+            WHEN invalid_ID THEN
+                DBMS_OUTPUT.PUT_LINE('Procedura nedostala validni ID hostitele.');
+    END;
+/
+
+UPDATE Hostitel SET ID_kocky = NULL WHERE ID_hostitele = 6;
+BEGIN
+    prideleni_kocky(6); -- hostiteli 6 zemrela kocka
+    prideleni_kocky(7); -- hostitel 7 jiz slouzi kocce, nic se nestane
+    prideleni_kocky(-1); -- nevalidni ID
+    prideleni_kocky(999); -- nevalidni ID
+END;
+/
+
+
+
+-- udrzba hesel, procedura pro pravidelnou zmenu vsech hesel tajnych teritorii
+CREATE OR REPLACE PROCEDURE password_maintenance IS
+    -- pouze tajna teritoria
+    CURSOR secret_territories IS
+        SELECT ID_teritoria FROM Teritorium WHERE heslo IS NOT NULL;
+
+    new_password VARCHAR2(10);
+    BEGIN
+        FOR rec IN secret_territories LOOP
+            -- generuj nove nahodne heslo
+            SELECT DBMS_RANDOM.STRING('x', 10) INTO new_password FROM dual;
+            UPDATE Teritorium SET heslo = new_password WHERE ID_teritoria = rec.ID_teritoria;
+        END LOOP;
+        COMMIT;
+    END;
+/
+
+BEGIN
+    password_maintenance;
+END;
+/
+
+
+-- projdi vsechny hracky a pokud nejaka hracka ma cenu NULL, pravdepodobne je kradena
+CREATE OR REPLACE PROCEDURE stolen_toys IS
+    v_ID_hracky Hracka.ID_hracky%TYPE;
+
+    BEGIN
+        FOR rec IN (SELECT ID_hracky FROM Hracka WHERE cena IS NULL) LOOP
+            SELECT ID_hracky INTO v_ID_hracky FROM Hracka WHERE ID_hracky = rec.ID_hracky;
+            DBMS_OUTPUT.PUT_LINE('Hracka s ID ' || v_ID_hracky || ' je pravdepodobne kradena, nebylo za ni nic zaplaceno.');
+        END LOOP;
+END;
+/
+
+UPDATE Hracka SET cena = NULL WHERE ID_hracky = 1;
+UPDATE Hracka SET cena = NULL WHERE ID_hracky = 2;
+BEGIN
+    stolen_toys;
+END;
+
+
+
